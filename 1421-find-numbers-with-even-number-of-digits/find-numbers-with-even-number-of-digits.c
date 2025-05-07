@@ -10,16 +10,14 @@ int findNumbers(int* nums, int numsSize) {
             while(num>0){
                 num/=10;
                 cnt++;
-
-        }
-        }
+                }
+            }
         if (cnt%2==0){
             count+=1;
         }
         else{
             continue;
         }
-        
     }
     return count;
 }
