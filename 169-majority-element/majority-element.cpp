@@ -3,9 +3,15 @@ public:
     int majorityElement(vector<int>& nums) {
        unordered_map<int,int> hash;
        for(auto it : nums) hash[it]++;
+       int max=0;
+       int fs;
        for(auto it : hash){
-            if(it.second>nums.size()/2) return it.first;
+            // if(it.second>nums.size()/2) return it.first;
+            if(it.second>max){
+                max=it.second;
+                fs=it.first;
+            }
        } 
-       return -1;
+       return fs;
     }
 };
