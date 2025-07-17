@@ -50,11 +50,11 @@ public:
             string s = strs[i];
             sort(strs[i].begin() , strs[i].end());
             
-            if(mpp.find(strs[i]) == mpp.end()){
+        
                 mpp[strs[i]].push_back(s);
-            }else{
-                mpp[strs[i]].push_back(s);
-            }
+            
+                // mpp[strs[i]].push_back(s);
+            
         }
 
         vector<vector<string>> result ;
