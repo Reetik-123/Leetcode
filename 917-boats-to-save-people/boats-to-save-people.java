@@ -6,13 +6,10 @@ class Solution {
         while(i<=j){
             int sum=nums[i]+nums[j];
             if(sum<=limit){
-                cnt++;
                 i++;
-                j--;
-            }else if(sum>limit){
-                j--;
-                cnt++;
             }
+            cnt++;
+            j--;
         }
         return cnt;
     }
